@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+<meta charset="UTF-8">
+<title>Minecraft</title>
+<meta name="Description" content="Strona poświecona Minecraft">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="Author" content="user" />
+<meta name="Robots" content="ALL" />
+		<link rel="stylesheet" href="css/style.css">
+		<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&amp;subset=latin-ext">
+	</head>
+	<body>
+
+<div id="page">
+
+    	<nav class="nav">
+      		<ul class="menu__list">
+      		<li class="baner"><h1><img src="grafika/graf.png" width="25" height="25">MINECRAFT GAMES</h1></li>
+        	<li class="menu__group"><a href="#hoome" class="menu__link">Home</a></li>
+	        <li class="menu__group"><a href="#ogre" class="menu__link">O grze</a></li>
+	        <li class="menu__group"><a href="#sklep" class="menu__link">Sklep</a></li>
+	        <li class="menu__group"><a href="#footer-k" class="menu__link">Kontakt</a></li>
+     		 </ul>
+   		 </nav>
+
+   	      </div>
+	<main id="hoome">
+		<img src="grafika/tlo.jpg" width="100%" height="100%" >
+	</main>
+		<section class="section">
+<div class="box-1" id="ogre">
+<img id="logo-box-1" src="grafika/steve.png" width="300" height="450">
+		<div class="text-block-1">
+		<article>Minecraft – gra komputerowa o otwartym świecie stworzona przez Markusa Perssona i rozwijana przez studio Mojang AB. Minecraft pozwala graczom na budowanie i niszczenie obiektów położonych w losowo generowanym świecie gry. Gracz może atakować napotkane istoty, zbierać surowce czy wytwarzać przedmioty.Minecraft jest grą bez określonych celów, jednak bardzo ważne jest przetrwanie. Gracze mają nieograniczone możliwości w eksplorowaniu i modyfikowaniu świata gry Pomimo iż gracze mogą poruszać się bez żadnych przeszkód po świecie, to bloki muszą być umieszczane w trójwymiarowej siatce. Gracze mogą stworzyć wszystko, a ogranicza ich tylko wyobraźnia</article>
+	</div>
+
+</div>
+
+
+
+<div class="box-2" id="sklep">
+
+<img id="logo-box-2" src="grafika/graf.png" width="300" height="300">
+	<h2>KUP GRE MINECRAFT</h2>
+		<div class="text-block">
+			<article>Minecraft to najpopularniejsza gra na świecie! Kupiło ją ponad 100 milionów osób na świecie.  Spoleczność graczy ciągle się rozrasta. Ludzie przeżywają wspólne przygody. Gra jest ciągle atualizowana. Możesz zagrać na dowolnym urządzeniu!</article>
+			</div>
+			<h3>KUP MINECRAFT NA SWOJE URZĄDZENIE<h3>
+<div class="wrapper">
+    <div class ="it1">
+      <p class="icon"><img src="grafika/win.png" width="75px" height="75px"> </p> 
+      		<h4>Windows</h4> 
+   	</div>
+   		 <div class="it2">
+     		<p class="icon"><img src="grafika/apple.png" width="75px" height="75px"> </p>
+     			<h4>MAC</h4>
+   			</div>		
+   				 <div class="it3">
+      				<p class="icon"><img src="grafika/android.png" width="75px" height="75px"> </p>
+      					<h4>Android</h4>
+		 			</div> 
+</div>
+
+</div>
+
+
+
+
+
+<footer class="footer" id="footer-k">
+			<div id="left-footer">
+        	 <h3>KONTKAT</h3>			
+        <article>
+        	<ul>
+        	 <li>Michał Grądek</li>
+        	 <li>Adres: ul.Chopina 6 21-100 Lubartów</li>
+        	 <li>Telefon: 500-600-700</li>
+        	 <li>Email: michal.grradek@gmail.com</li>
+        	 </ul>
+     	   </article>
+      </div>
+
+      <div id="center-footer">
+       			 <h3>SPOŁECZNOŚĆ</h3>      
+        <article>
+        	<div id="socialdivs">
+				<div class="fb">
+					<i class="icon-facebook"></i>
+				</div>
+				<div class="yt">
+					<i class="icon-youtube"></i>
+				</div>
+				<div class="tw">
+					<i class="icon-twitter"></i>
+				</div>
+				<div class="gplus">
+					<i class="icon-gplus"></i>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+       	</article>
+     </div>
+
+      <div id="right-footer">
+        	  <h3>POMOC</h3>
+        <article>
+			<form id="form" action="mailto:michal.grradek@gmail.com" method="post">
+
+  				Imie i nazwisko:<div id="table"><input type="text" name="imieinazwisko" size="30"></div><br>
+ 				Adres e-mail:<div id="table"><input type="text" name="imie" size="30"></div><br>
+   				Wiadomość:<div id="table"><textarea name="nazwa" cols="32" rows="2" style="margin-top: 10px;">Treść wiadomości...</textarea></div><br><br>
+   				<div id="table"><input type="submit" value="Wyślij"></div>
+			</form>
+        </article>
+      </div>
+
+</footer>
+
+ <div class="author">All right reserved by EllLucjanoItaliano.</div>
+
+
+<script src="jquery-1.11.3.min.js"></script>
+	
+<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+
+	</body>
+</html>
